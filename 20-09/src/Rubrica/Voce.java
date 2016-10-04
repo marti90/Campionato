@@ -2,16 +2,15 @@ package Rubrica;
 
 public class Voce {
 	
-	private String nome="";
-	private String cognome="";
-	private String tel="";
+	private String nome;
+	private String cognome;
+	private String tel;
 	
 	public Voce(){
 		
 	}
 	
 	public Voce(String nome, String cognome, String tel) {
-		
 		this.nome = nome;
 		this.cognome = cognome;
 		this.tel = tel;
@@ -41,8 +40,8 @@ public class Voce {
 		this.tel = tel;
 	}
 	
-	
-	
-	
+	public String contatto(){
+		return nome+" "+cognome+" "+tel;
+	}
 
 }
